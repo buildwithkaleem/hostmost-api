@@ -13,10 +13,15 @@ import siteRoutes from '../routes/site.routes.js';
 const app = express();
 
 
-app.use(cors({
-  origin: "http://localhost:5173", // frontend URL
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173", // local frontend
+      "https://your-frontend.vercel.app", // production frontend
+    ],
+    credentials: true,
+  })
+);
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
