@@ -186,52 +186,75 @@ export const freeServiceApprovedTemplate = (userName) => {
   <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Service Approved</title>
+    <title>Hosting Request Submitted</title>
   </head>
+
   <body style="margin:0; padding:0; background:#f5f6fa; font-family:Arial, sans-serif;">
-    
+
     <table width="100%" cellpadding="0" cellspacing="0">
       <tr>
         <td align="center">
-          
-          <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff; margin-top:40px; border-radius:10px; overflow:hidden;">
-            
+
+          <table 
+            width="600" 
+            cellpadding="0" 
+            cellspacing="0" 
+            style="background:#ffffff; margin-top:40px; border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.08);"
+          >
+
             <!-- Header -->
             <tr>
-              <td style="background:#0a0a0a; padding:20px; text-align:center;">
-                <h1 style="color:#ffffff; margin:0;">🎉 Congratulations!</h1>
+              <td 
+                style="background:linear-gradient(90deg,#4f46e5,#7c3aed); padding:30px; text-align:center;"
+              >
+                <h1 style="color:#ffffff; margin:0; font-size:32px;">
+                  🎉 Hosting Request Submitted
+                </h1>
               </td>
             </tr>
 
             <!-- Body -->
             <tr>
-              <td style="padding:30px;">
-                
-                <h2 style="margin-top:0;">Hi ${userName}, 👋</h2>
-                
-                <p style="color:#555; font-size:16px; line-height:1.6;">
-                  We’re excited to inform you that your application for our <strong>Free Hosting Service</strong> has been <strong>successfully approved</strong>.
+              <td style="padding:40px 35px;">
+
+                <h2 style="margin-top:0; color:#111827; font-size:26px;">
+                  Hi ${userName}, 👋
+                </h2>
+
+                <p style="color:#4b5563; font-size:16px; line-height:1.8;">
+                  Thank you for submitting your request for our 
+                  <strong style="color:#4f46e5;">
+                    Free Hosting Service
+                  </strong>.
                 </p>
 
-                <p style="color:#555; font-size:16px; line-height:1.6;">
-                  Your account is now in the setup phase. You will receive your <strong>cPanel access details</strong> within 
-                  <strong>3 to 5 business days</strong>.
+                <p style="color:#4b5563; font-size:16px; line-height:1.8;">
+                  Your application has been received successfully and is currently under review by our hosting team.
                 </p>
 
-                <p style="color:#555; font-size:16px; line-height:1.6;">
-                  Please keep an eye on your email for further updates and instructions.
+                <p style="color:#4b5563; font-size:16px; line-height:1.8;">
+                  Once approved, your hosting account credentials and setup instructions will be sent directly to your registered email address.
                 </p>
 
-                <!-- Highlight Box -->
-                <div style="background:#f1f2f6; padding:15px; border-radius:6px; margin:20px 0;">
-                  <p style="margin:0; color:#333; font-size:15px;">
-                    ⏳ Estimated Setup Time: <strong>3–5 Business Days</strong><br/>
-                    📩 Access Details: Will be sent via email
+                <!-- Info Box -->
+                <div 
+                  style="
+                    background:#eef2ff;
+                    border:1px solid #c7d2fe;
+                    padding:20px;
+                    border-radius:10px;
+                    margin:30px 0;
+                  "
+                >
+                  <p style="margin:0; color:#374151; font-size:15px; line-height:1.8;">
+                    ⏳ <strong>Approval & Setup Time:</strong> 3–5 Business Days
+                    <br/><br/>
+                    📩 <strong>Account Details:</strong> Sent after approval via email
                   </p>
                 </div>
 
-                <p style="color:#777; font-size:14px;">
-                  If you have any questions, feel free to contact our support team.
+                <p style="color:#6b7280; font-size:14px; line-height:1.7;">
+                  Please keep an eye on your inbox for further updates. If you have any questions, feel free to contact our support team anytime.
                 </p>
 
               </td>
@@ -239,7 +262,15 @@ export const freeServiceApprovedTemplate = (userName) => {
 
             <!-- Footer -->
             <tr>
-              <td style="background:#f5f6fa; padding:20px; text-align:center; font-size:12px; color:#999;">
+              <td 
+                style="
+                  background:#f9fafb;
+                  padding:20px;
+                  text-align:center;
+                  font-size:12px;
+                  color:#9ca3af;
+                "
+              >
                 © ${new Date().getFullYear()} HostMost. All rights reserved.
               </td>
             </tr>
