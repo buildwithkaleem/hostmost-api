@@ -16,8 +16,8 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:5173", // local frontend
       "https://hostmost.vercel.app", // production frontend
+      "http://localhost:5173", // local frontend
     ],
     credentials: true,
   })
