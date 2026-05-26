@@ -17,6 +17,7 @@ app.use(
   cors({
     origin: [
       "https://hostmost.vercel.app", // production frontend
+      "https://hostmost.egrif.online", // production frontend
       "http://localhost:5173", // local frontend
     ],
     credentials: true,
